@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+.div-header {
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    /* background-image: url(../imagens/header.jpg); */
+    background-size: cover;
+    background-position: center;
+    border-bottom: #333;
+}
+
+.div-menu {
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu {
+    position: fixed;
+    top: 20px;
+    align-content: center;
+    list-style: none;
+    border: 1px solid #333;
+    float: left;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #333;
+}
+
+.menu li a {
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+    padding: 5px 30px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: #333;
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+
+.div-body {
+    width: 100%;
+    height: 90vh;
+    margin-top: 60px;
+}
+
+
+.div-box {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+    grid-template-rows: 120px 120px;
+    color: #444;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 200%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box:hover {
+    /* opacity: 0.8; */
+    background-size: 110%;
+}
+
+.a {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-image: url(imagens/macbook.png);
+}
+
+.b {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    background-image: url(imagens/ipad.png);
+}
+
+.c {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    background-image: url(imagens/iphone.png);
+}
+
+.d {
+    grid-column: 4 / 6;
+    grid-row: 1;
+    background-image: url(imagens/watch.png);
+}
+
+.e {
+    grid-column: 4/ 6;
+    grid-row: 2;
+    background-image: url(imagens/teclado.png);
+
+}
+
+
+.div-footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-acessibilidade {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.botaoTema {
+    /* position: fixed; */
+    /* display: flex; */
+    right: 0;
+    bottom: 0;
+    font-size: x-small;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.botaoFonte {
+    width: 20px;
+    height: 20px;
+}
+
+.botaoDarkMode:hover,
+.botaoFonte:hover {
+    background-color: #333;
+    color: #fff;
+}
